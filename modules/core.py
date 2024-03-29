@@ -148,7 +148,7 @@ def time_name():
     date = datetime.date.today()
     now = datetime.datetime.now()
     current_time = now.strftime("%H%M%S")
-    return f"{date} {current_time}.mp4"
+    return f"{date} {current_time}.mkv"
 
 
 async def download_video(url,cmd, name):
@@ -177,7 +177,7 @@ async def download_video(url,cmd, name):
 
         return name
     except FileNotFoundError as exc:
-        return os.path.isfile.splitext[0] + "." + "mp4"
+        return os.path.isfile.splitext[0] + "." + "mkv"
 
 
 async def send_doc(bot: Client, m: Message,cc,ka,cc1,prog,count,name):
